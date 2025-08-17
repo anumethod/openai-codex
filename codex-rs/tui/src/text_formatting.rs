@@ -26,7 +26,7 @@ pub(crate) fn format_and_truncate_tool_result(
 /// and can only do line breaks at whitespace. If we use the default serde_json format, we get lines
 /// without spaces that Ratatui can't wrap nicely. If we use the serde_json pretty format as-is,
 /// it's much too sparse and uses too many terminal rows.
-/// Relevant issue: https://github.com/ratatui/ratatui/issues/293
+/// Relevant issue: <https://github.com/ratatui/ratatui/issues/293>
 pub(crate) fn format_json_compact(text: &str) -> Option<String> {
     let json = serde_json::from_str::<serde_json::Value>(text).ok()?;
     let json_pretty = serde_json::to_string_pretty(&json).unwrap_or_else(|_| json.to_string());

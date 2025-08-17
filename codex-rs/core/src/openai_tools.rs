@@ -70,7 +70,7 @@ static DEFAULT_CODEX_MODEL_TOOLS: LazyLock<Vec<OpenAiTool>> =
 
 /// Returns JSON values that are compatible with Function Calling in the
 /// Responses API:
-/// https://platform.openai.com/docs/guides/function-calling?api-mode=responses
+/// <https://platform.openai.com/docs/guides/function-calling?api-mode=responses>
 pub(crate) fn create_tools_json_for_responses_api(
     prompt: &Prompt,
     model: &str,
@@ -98,7 +98,7 @@ pub(crate) fn create_tools_json_for_responses_api(
 
 /// Returns JSON values that are compatible with Function Calling in the
 /// Chat Completions API:
-/// https://platform.openai.com/docs/guides/function-calling?api-mode=chat
+/// <https://platform.openai.com/docs/guides/function-calling?api-mode=chat>
 pub(crate) fn create_tools_json_for_chat_completions_api(
     prompt: &Prompt,
     model: &str,

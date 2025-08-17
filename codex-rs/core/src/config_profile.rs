@@ -8,7 +8,7 @@ use crate::protocol::AskForApproval;
 pub struct ConfigProfile {
     pub model: Option<String>,
     /// The key in the `model_providers` map identifying the
-    /// [`ModelProviderInfo`] to use.
+    /// [`crate::model_provider_info::ModelProviderInfo`] to use.
     pub model_provider: Option<String>,
     pub approval_policy: Option<AskForApproval>,
     pub disable_response_storage: Option<bool>,

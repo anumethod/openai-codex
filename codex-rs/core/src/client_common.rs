@@ -61,7 +61,7 @@ pub(crate) struct Reasoning {
     pub(crate) summary: Option<OpenAiReasoningSummary>,
 }
 
-/// See https://platform.openai.com/docs/guides/reasoning?api-mode=responses#get-started-with-reasoning
+/// See <https://platform.openai.com/docs/guides/reasoning?api-mode=responses#get-started-with-reasoning>
 #[derive(Debug, Serialize, Default, Clone, Copy)]
 #[serde(rename_all = "lowercase")]
 pub(crate) enum OpenAiReasoningEffort {
@@ -84,7 +84,7 @@ impl From<ReasoningEffortConfig> for Option<OpenAiReasoningEffort> {
 
 /// A summary of the reasoning performed by the model. This can be useful for
 /// debugging and understanding the model's reasoning process.
-/// See https://platform.openai.com/docs/guides/reasoning?api-mode=responses#reasoning-summaries
+/// See <https://platform.openai.com/docs/guides/reasoning?api-mode=responses#reasoning-summaries>
 #[derive(Debug, Serialize, Default, Clone, Copy)]
 #[serde(rename_all = "lowercase")]
 pub(crate) enum OpenAiReasoningSummary {

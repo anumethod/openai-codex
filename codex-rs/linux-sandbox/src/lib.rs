@@ -14,7 +14,7 @@ use std::path::PathBuf;
 /// `codex-linux-sandbox` sub-command.
 ///
 /// When the current executable is invoked through the hard-link or alias
-/// named `codex-linux-sandbox` we *directly* execute [`run_main`](crate::run_main)
+/// named `codex-linux-sandbox` we *directly* execute [`run_main`]
 /// (which never returns). Otherwise we:
 /// 1.  Construct a Tokio multi-thread runtime.
 /// 2.  Derive the path to the current executable (so children can re-invoke
